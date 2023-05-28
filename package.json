@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "concurrently \"npm run dev:db\" \"cd server && npm run dev\" \"cd client && npm run dev\"",
-    "dev:db": "docker run --rm --name actualize-db -e POSTGRES_PASSWORD=admin -p 5432:5432 -d postgres"
+    "dev": "concurrently \"npm run dev:db\" \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:db": "npm run dev:docker-db && cd database && npm run start",
+    "dev:docker-db": "docker rm --force actualize-db && docker run --name actualize-db -e POSTGRES_PASSWORD=admin -p 5432:5432 -d postgres",
+    "dev:server": "cd server && npm run dev"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-typescript": "^7.21.5",
+    "@types/node": "^20.2.5",
     "@typescript-eslint/eslint-plugin": "^5.59.7",
     "@typescript-eslint/parser": "^5.59.7",
     "eslint": "^8.41.0",
@@ -17,7 +21,6 @@
   },
   "dependencies": {
     "@types/express": "^4.17.17",
-    "@types/node": "^20.2.5",
     "concurrently": "^8.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
