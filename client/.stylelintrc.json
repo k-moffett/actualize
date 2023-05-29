@@ -2,6 +2,7 @@
   "extends": "stylelint-config-standard-scss",
   "rules": {
     "property-no-unknown": null,
-    "selector-pseudo-class-no-unknown": null
+    "selector-pseudo-class-no-unknown": null,
+    "no-missing-end-of-source-newline": true
   }
 }

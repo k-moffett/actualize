@@ -1,6 +1,5 @@
-import { Metadata} from 'next';
-import variables from '../../styles/color-variables.module.scss';
-
+import { Metadata } from 'next';
+import variables from '../../styles/colors.module.scss';
 
 const metadata: Metadata = {
     title: 'Actualize',
