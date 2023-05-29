@@ -1,4 +1,6 @@
 import { Metadata} from 'next';
+import variables from '../../styles/variables.module.scss';
+
 
 const metadata: Metadata = {
     title: 'Actualize',
@@ -7,7 +9,7 @@ const metadata: Metadata = {
 export default function Root() {
     return (
         <main>
-      ok
+            <div style={{ color: variables.primaryColor }}>Root Page</div>
         </main>
     );
 }
