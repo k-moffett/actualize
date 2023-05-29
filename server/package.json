@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/index.ts",
+  "nodemonConfig": {
+    "autoAttachChildProcesses": true
+  },
   "scripts": {
     "dev": "npx nodemon ./src/index.ts"
   },

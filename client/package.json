@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "stylelint": "npx stylelint \"**/*.scss\""
   },
   "dependencies": {
     "@types/react": "18.2.6",
@@ -19,6 +20,8 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "sass": "^1.62.1"
+    "sass": "^1.62.1",
+    "stylelint": "^15.6.2",
+    "stylelint-config-standard-scss": "^9.0.0"
   }
 }

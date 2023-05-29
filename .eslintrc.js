@@ -36,6 +36,21 @@ module.exports = {
         'semi': [
             'error',
             'always'
+        ],
+        'object-curly-spacing': [
+            'error',
+            'always'
+        ],
+        'no-trailing-spaces': [
+            'error'
+        ],
+        'eol-last': [
+            'error',
+            'always'
+        ],
+        'no-multiple-empty-lines': [
+            'error',
+            { 'max': 1 }
         ]
     }
 };
