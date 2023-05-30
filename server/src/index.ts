@@ -8,7 +8,7 @@ const options: cors.CorsOptions = {
     origin: allowedOrigins
 };
 
-app.use(cors(options)); /* NEW */
+app.use(cors(options));
 app.use(express.json());
 
 app.get('/', (req, res) => {
