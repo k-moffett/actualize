@@ -6,6 +6,10 @@ const nextConfig = {
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
     },
+    // TODO: Figure out another solution for external imports, or why this works...
+    experimental: {
+        externalDir: true,
+    },
 };
 
 module.exports = nextConfig;

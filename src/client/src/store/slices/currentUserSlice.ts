@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 import type { RootState } from '@/store';
-import { User } from '../../../../shared';
+import { User } from '@shared/src';
 
 interface CurrentUserState {
     currentUser: User

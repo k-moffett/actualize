@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { HYDRATE } from 'next-redux-wrapper';
-import { User } from '../../../shared';
+import { User } from '@shared/src';
 
 export const userApi = createApi({
     reducerPath: 'userApi',

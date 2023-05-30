@@ -4,10 +4,10 @@
   "description": "",
   "scripts": {
     "dev": "concurrently \"npm run dev:db\" \"npm run dev:server\" \"npm run dev:client\"",
-    "dev:client": "cd client && npm run dev",
-    "dev:db": "npm run dev:docker-db && cd database && npm run start",
+    "dev:client": "cd src/client && npm run dev",
+    "dev:db": "npm run dev:docker-db && cd src/database && npm run start",
     "dev:docker-db": "docker rm --force actualize-db && docker run --name actualize-db -e POSTGRES_PASSWORD=admin -p 5432:5432 -d postgres",
-    "dev:server": "cd server && npm run dev"
+    "dev:server": "cd src/server && npm run dev"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +23,7 @@
     "@types/express": "^4.17.17",
     "aws-sdk": "^2.1386.0",
     "concurrently": "^8.0.1",
+    "dotenv": "^16.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
   }

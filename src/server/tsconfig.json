@@ -11,6 +11,10 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@shared/*": ["../shared/src/*"]
+    }
   },
   "include": ["./src/**/*"],
 }

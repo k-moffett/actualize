@@ -1,2 +1,6 @@
 {
+  "paths": {
+    "@database/*": ["src/database/*"],
+    "@shared/*": ["src/shared/*"]
+  }
 }
